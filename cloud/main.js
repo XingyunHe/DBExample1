@@ -25,7 +25,7 @@ exports.storeInfo = function(params, callback) {
 exports.listInfo = function(params, callback){
   $fh.db({
     "act": "list",
-    "type": "myFirstEntity",
+    "type": "myFirstCollection",
   }, function(err, data) {
     return callback(err, data);
   });
