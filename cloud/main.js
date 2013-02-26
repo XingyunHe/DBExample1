@@ -8,7 +8,7 @@ var util = require('util');
 exports.storeInfo = function(params, callback) {
   $fh.db({
   "act": "create",
-  "type": "myFirstCollection",
+  "type": "myFirstEntity",
   "fields": {
     "name": params.name,
     "work": params.work
@@ -25,7 +25,7 @@ exports.storeInfo = function(params, callback) {
 exports.listInfo = function(params, callback){
   $fh.db({
     "act": "list",
-    "type": "myFirstCollection",
+    "type": "myFirstEntity",
   }, function(err, data) {
     return callback(err, data);
   });
